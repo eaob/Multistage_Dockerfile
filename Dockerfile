@@ -1,4 +1,5 @@
-FROM node:16.10-alpine3.11 AS build
+ARG NODEVERSION
+FROM node:$NODEVERSION-alpine3.11 AS build
 RUN apk add git && \
 git clone https://github.com/nodejs/nodejs.org.git && \
 cd /nodejs.org && \

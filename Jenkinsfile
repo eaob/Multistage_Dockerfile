@@ -9,11 +9,6 @@ pipeline {
         choice(name: 'nodeversion', choices: ['16.10', '14.18', '12.22'], description: 'Specify nodejs version')
     }
   stages {
-  //  stage('Cloning Git') {
-   //   steps {
-   //     git branch: 'main', credentialsId: 'github', url: 'git@github.com:eaob/Multistage_Dockerfile.git'
-   //   }
-   // }
     stage('Build & Push Image') {
       steps{
         script {

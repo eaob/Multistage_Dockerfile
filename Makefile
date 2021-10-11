@@ -15,9 +15,6 @@ server: ;@echo "Starting ${PROJECT}....."; \
 install: ;@echo "Installing ${PROJECT}....."; \
         npm install
 
-clean: ;
-        rm -rf ./*
-
 
 .PHONY: test server install clean
 

@@ -16,5 +16,4 @@ install: ;@echo "Installing ${PROJECT}....."; \
         npm install
 
 
-.PHONY: test server install clean
-
+.PHONY: test server install lint
